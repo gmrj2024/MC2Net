@@ -1,0 +1,20 @@
+python main.py  --epochs 100\
+ --schedule 50\
+ --lr 2e-4\
+ --resume ./pretrained/HCOCO_model_best.pth.tar\
+ -c ./ccHarmony/ \
+ --arch labrgbhsv_ret_mixattenrefine\
+ --withLabel False\
+ --sltype vggx\
+ --lambda_NCE 0.0\
+ --min_area 1000 \
+ --L1_pixel_loss 0.0\
+ --ssim-loss 0.0\
+ --masked True\
+ --machine no_contr\
+ --input-size 256\
+ --hr_size 256\
+ --train-batch 2\
+ --test-batch 1\
+ --base-dir [dataset roots]\
+ --data ccHarmony256\
